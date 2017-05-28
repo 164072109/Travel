@@ -1,0 +1,217 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/app.min.1.css" type="text/css"/>
+	<link rel="stylesheet" href="css/app.min.2.css" type="text/css"/>
+	<link rel="stylesheet" href="css/travelguide.css" type="text/css"/>
+	<script src="js/jquery-3.1.1.js"></script>
+    <title>demo</title>
+</head>
+<body style="margin-top:30px;overflow-y:auto;">
+	<!-- 导服中心端-旅行社管理-评价旅行社 -->
+	<div class="pop-container">
+		<div class="pop-header clearfix">
+			<h4>评价</h4>
+			<a class="m-close"><img src="images/close.png"></a>
+		</div>
+		<div class="pop-main">
+            <p class="pop-title">请您对此旅行社进行评价吧！</p>
+            <div class="pop-line">
+			    <label>服务评价</label>
+				<textarea rows="7" placeholder="真实客观的描述有利于我们提高服务质量"></textarea>
+			</div>
+		</div>
+		<div class="pop-btn">
+			<a class="btn-gray">取&nbsp;&nbsp;消</a>
+			<a class="btn-yellow">确&nbsp;&nbsp;定</a>	
+		</div>
+    </div> 
+  
+    <br/><br/><br/>
+	
+	<!-- 旅行社端-订单中心-进行中-待结束-查看详情-评价 -->
+	<div class="pop-container">
+		<div class="pop-header clearfix">
+			<h4>评价</h4>
+			<a class="m-close"><img src="images/close.png"></a>
+		</div>
+		<div class="pop-main">
+            <p class="pop-title">请您为本次合作的导游评价吧！</p>
+			<div class="pop-line">
+			    <label>服务评星</label>
+				<span><img src="images/star_null.png"></span>
+			</div>
+            <div class="pop-line">
+			    <label>服务评价</label>
+				<textarea rows="6" placeholder="真实客观的描述有利于我们提高服务质量"></textarea>
+			</div>
+		</div>
+		<div class="pop-btn">
+			<a class="btn-gray">取&nbsp;&nbsp;消</a>
+			<a class="btn-yellow">确&nbsp;&nbsp;定</a>	
+		</div>
+    </div> 
+  
+    <br/><br/><br/>
+	
+	<!-- 旅行社端-订单中心-进行中-待确认-弹出 -->
+	<div class="pop-container">
+		<div class="pop-header clearfix">
+			<h4>提示</h4>
+			<a class="m-close"><img src="images/close.png"></a>
+		</div>
+		<div class="pop-txt">
+            <img src="images/pop_notice.png">
+			<p>请与导游线下沟通后再进行此操作<br/>确认后取消会影响贵社的信用值哦~
+			</p>
+		</div>
+		<div class="pop-btn">
+			<a class="btn-gray">取&nbsp;&nbsp;消</a>
+			<a class="btn-yellow">确认关闭</a>	
+		</div>
+    </div> 
+  
+    <br/><br/><br/>
+	
+	<!-- 旅行社端-订单中心-进行中-待确认-查看详情-关闭订单 -->
+	<div class="pop-container">
+		<div class="pop-header clearfix">
+			<h4>关闭订单</h4>
+			<a class="m-close"><img src="images/close.png"></a>
+		</div>
+		<div class="pop-main">
+			<div class="pop-txt pop-txt1">
+				<img src="images/pop_notice.png">
+				<p>关闭订单会影响您的信誉哦~<br/>是否确认关闭此订单？
+				</p>
+			</div>
+			<div class="pop-line">
+				<label>关闭订单</label>
+				<textarea rows="4" placeholder="请填写关闭订单的理由"></textarea>
+			</div>	
+		</div>	
+		<div class="pop-btn">
+			<a class="btn-gray">去确认</a>
+			<a class="btn-yellow">已确认</a>	
+		</div>
+    </div> 
+  
+    <br/><br/><br/>	
+	
+	<!-- 旅行社端-订单中心-进行中-待确认-查看详情-置顶订单弹出提示 -->
+	<div class="pop-container">
+		<div class="pop-header clearfix">
+			<h4>提示</h4>
+			<a class="m-close"><img src="images/close.png"></a>
+		</div>
+		<div class="pop-txt">
+            <img src="images/pop_notice.png">
+			<p>您已修改订单要求<br/>是否确认发布置顶此订单？
+			</p>
+		</div>
+		<div class="pop-btn">
+			<a class="btn-gray">取&nbsp;&nbsp;消</a>
+			<a class="btn-yellow">发&nbsp;&nbsp;布</a>	
+		</div>
+    </div> 
+  
+    <br/><br/><br/>
+
+	<!-- 旅行社端-订单中心-进行中-待确认-查看详情-置顶订单 -->
+	<div class="pop-container w-650">
+		<div class="pop-header clearfix">
+			<h4>置顶订单</h4>
+			<a class="m-close"><img src="images/close.png"></a>
+		</div>
+		<div class="pop-zd clearfix">
+			<div class="col-md-6 order-zd">
+				<label>截止时间</label>
+				<input type="data">
+			</div>
+			<div class="col-md-6 order-zd">
+				<label>应标人数</label>
+				<input type="text"> 人
+			</div>
+			<div class="col-md-6 order-zd">
+				<label>应标人数</label>
+				<span>300元</span>
+			</div>
+			<div class="col-md-6 order-zd">
+				<label>添加酬金</label>
+				<input type="text"> 元
+			</div>
+			<div class="col-md-12">
+				<p class="pop-zdtitle">导游要求</p>
+			</div>
+			<div class="col-md-6 order-zd">
+				<label>导游人数</label>
+				<input type="text"> 人
+			</div>
+			<div class="col-md-6 order-zd">
+				<label>性别要求</label>
+				<span class="sex-require">
+					<span><input type="radio" name="sex"> 无要求</span>
+					<span><input type="radio" name="sex"> 男</span>
+					<span><input type="radio" name="sex"> 女</span>
+				</span>
+			</div>
+			<div class="col-md-12 order-zd">
+				<label>品牌导游</label>
+				<span class="sex-require">
+					<span><input type="radio" name="guide"> 无要求</span>
+					<span><input type="radio" name="guide"> 是</span>
+				</span>
+			</div>
+			<div class="col-md-6 order-zd">
+				<label>评分要求</label>
+				<span class="sex-require">
+					<img src="images/star.png">
+				</span>
+			</div>
+			<div class="col-md-6 order-zd">
+				<label>学历要求</label>
+				<select class="">
+					<option>本科</option>
+				</select>
+			</div>
+			<div class="col-md-12 order-zd">
+				<label>语言要求</label>
+				<span class="language">
+					<span>西班牙语<img src="images/language_close.png"></span>
+					<a class="add-language"><i class="iconfont"></i>
+						<ul class="language-choice">
+							<li class="language-checked">阿尔巴尼亚文</li>
+							<li>阿拉伯文</li>
+							<li>爱沙尼亚语</li>
+							<li>保加利亚文</li>
+							<li>西班牙语</li>
+						</ul>
+					</a>
+				</span>
+			</div>
+		</div>
+		<div class="pop-btn">
+			<a class="btn-gray">取&nbsp;&nbsp;消</a>
+			<a class="btn-yellow">发&nbsp;&nbsp;布</a>	
+		</div>
+    </div> 
+  
+    <br/><br/><br/>
+	<script type="text/javascript">
+		$(".add-language").click(function(){
+		    $(".language-choice").show();
+		});
+		$(".add-language").mouseleave(function(){
+		    $(".language-choice").hide();
+		});
+		$(".language-choice li").click(function(){
+		    $(this).hasClass("language-checked")?$(this).removeClass("language-checked"):$(this).addClass("language-checked");
+		});
+	</script>	
+</body>
+</html>

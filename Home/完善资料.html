@@ -1,0 +1,100 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/app.min.1.css" type="text/css"/>
+	<link rel="stylesheet" href="css/app.min.2.css" type="text/css"/>
+	<link rel="stylesheet" href="css/travelguide.css" type="text/css"/>
+	<script src="js/jquery-3.1.1.js"></script>
+    <title>demo</title>
+</head>
+<body class="o-hidden">
+    <div class="header">
+	    <ul class="header-nav clearfix">
+		    <li class="headlogo"><img class="b-0" src="images/logo.png"></li>
+		    <li class="header-nav-right m-r-10">
+                <a class="btn-logo">登  录</a>
+                <a class="btn-logo">注  册</a>
+			</li>	    
+		</ul>
+	</div>
+	<div class="login-bg">
+		<div class="information-content">
+		    <h1 class="login-title m-b-30">完善资料</h1>
+		    <div class="information-line">           
+			   <label>姓名</label>
+			   <input type="text">       
+		    </div>         
+		    <div class="information-line">           
+			   <label>性别</label>
+			   <span class="infor-sex">
+			       <span><input type="radio" name="sex"> 男</span>
+			       <span><input type="radio" name="sex"> 女</span>
+			   </span>  
+		    </div>
+			<div class="information-line">           
+			   <label>联系方式</label>
+			   <input type="text">       
+		    </div>  
+			<div class="information-line">           
+			   <label>导游资格证书号码</label>
+			   <input class="w-t" type="text"> 
+ 			   <a class="btn-uploadimg">上传图片</a>
+		    </div> 
+			<div class="information-line">           
+			   <label>导游证编号</label>
+			   <input class="w-t" type="text"> 
+ 			   <a class="btn-uploadimg">上传图片</a>
+		    </div> 
+			<div class="information-upimg clearfix">
+			    <div class="upimg-box fl">
+				    <img src="images/book01.png">
+					<span class="imgbox-num">导游资格证书（1）</span>
+					<span class="shadow-btn pop-h">
+					   <a class="btn-uplook"><i class="iconfont"></i></a>
+					   <a class="btn-updel"><i class="iconfont"></i></a>
+				    </span>
+				</div>
+				<div class="upimg-box fr text-right">
+				    <img src="images/book02.png">
+					<span class="imgbox-num">导游证（1）</span>
+					<span class="shadow-btn pop-h">
+					   <a class="btn-uplook"><i class="iconfont"></i></a>
+					   <a class="btn-updel"><i class="iconfont"></i></a>
+				    </span>
+				</div>
+			</div>
+		    <div class="login-btn w-btn"><a>完   成</a></div>
+	    </div>
+	</div>
+	<div class="footer">   
+		苏ICP备08009322号&nbsp;&nbsp;&nbsp;苏州市旅游局&nbsp;&nbsp;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术支持：苏州星熙数据科技有限公司<br>业务咨询：0512-67678905&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术咨询：0512-67678905
+	</div>	
+	
+    <div class="uploadimg-pop uploadimg-pop1">
+	    <img src="images/book01.png">
+	</div>
+ 
+	<script type="text/javascript">	
+		$(".btn-uplook").click( function(){
+			$(".uploadimg-pop").show();
+		});
+		$(".uploadimg-pop").click( function(){
+			$(".uploadimg-pop").hide();
+		});
+	</script>
+	<script type="text/javascript">
+	  // 左侧导航栏滚动条自适应 
+		function layout() {
+		    $(".login-bg").css("height", $(window).height() - 148);
+		};
+		layout();
+		$(window).resize(function () { layout() });		
+
+	</script>	
+</body>
+</html>
