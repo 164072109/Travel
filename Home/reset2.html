@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/app.min.2.css" type="text/css" />
     <link rel="stylesheet" href="css/travelguide.css" type="text/css" />
     <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/angular.js"></script>
+    <script src="js/bootstrap-notify.min.js"></script>
     <title>demo</title>
 </head>
 
@@ -24,25 +26,26 @@
             </li>
         </ul>
     </div>
-    <div class="login-bg">
+    <div class="login-bg" ng-app="app" ng-controller="reset2Controller">
         <div class="login-content">
             <h1 class="login-title">重置密码</h1>
             <div class="login-line">
                 <span><i class="iconfont login-icon">&#xe635;</i></span>
-                <input type="password" placeholder="新密码">
+                <input type="password" placeholder="新密码" ng-model='pwd1'>
             </div>
             <div class="login-line">
                 <span><i class="iconfont login-icon">&#xe635;</i></span>
-                <input type="password" placeholder="确认新密码">
+                <input type="password" placeholder="确认新密码" ng-model='pwd2'>
             </div>
-            <div class="login-btn"><a href="login.html">确定重置</a></div>
+            <div class="login-btn"><a ng-click='resetPwd()'>确定重置</a></div>
             <div class="login-link">没有帐号？<a href="regist.html">点击注册</a></div>
         </div>
     </div>
     <div class="footer">
         苏ICP备08009322号&nbsp;&nbsp;&nbsp;苏州市旅游局&nbsp;&nbsp;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术支持：苏州星熙数据科技有限公司<br>业务咨询：0512-67678905&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术咨询：0512-67678905
     </div>
-
+	<script type="text/javascript"  src="js/getUrlParam.js"></script> 
+	<script type="text/javascript"  src="js/notify.js"></script> 
     <script type="text/javascript">
         // 左侧导航栏滚动条自适应 
         function layout() {
@@ -51,6 +54,26 @@
         layout();
         $(window).resize(function() {
             layout()
+        });
+        console.log(UrlParm.getParam('phoneNo'));
+        var app = angular.module('app', []);
+        app.controller("reset2Controller", function($scope) {
+            vm = $scope;
+            vm.resetPwd = function() {
+                var pwd1 = vm.pwd1;
+                var pwd2 = vm.pwd2;
+                if (!pwd1 || !pwd2) {
+                    _notify("请输入密码")
+                    return;
+                }
+                if(pwd1!=pwd2){
+//                  alert("两次密码不一致")
+                    _notify("两次密码不一致",'info');
+                    return;
+                }
+                _notify("重置成功",'success');
+                window.location.href = "login.html";
+            }
         });
     </script>
 </body>
