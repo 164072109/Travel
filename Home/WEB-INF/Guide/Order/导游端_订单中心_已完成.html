@@ -1,284 +1,289 @@
 ﻿<!DOCTYPE HTML>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
-	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-	<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="css/app.min.1.css" type="text/css"/>
-	<link rel="stylesheet" href="css/app.min.2.css" type="text/css"/>
-	<link rel="stylesheet" href="css/travelguide.css" type="text/css"/>
-	<script src="js/jquery-3.1.1.js"></script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../../css/app.min.1.css" type="text/css" />
+    <link rel="stylesheet" href="../../../css/app.min.2.css" type="text/css" />
+    <link rel="stylesheet" href="../../../css/travelguide.css" type="text/css" />
+    <script src="../../../js/jquery-3.1.1.js"></script>
     <title>demo</title>
 </head>
+
 <body>
     <div class="header">
-	    <ul class="header-nav clearfix">
-		    <li class="headlogo"><img src="images/logo.png"><span class="headlabel">导游端</span></li>
-		    <li class="header-nav-right">
-			    <ul>
-				    <li class="usercenter">				    
-						<a>
-							<span>管理员</span>
-							<span class="person-img">
-								<img src="images/default_person.png">
-							</span> 
-                        </a>						
-					</li>				
-				    <li class="setup">
-					   <a><i class="iconfont">&#xe60b;</i>退出</a>
-					</li>
-				</ul>
-			</li>	    
-		</ul>
-	</div>
-	<div class="content">
-		<div class="sidebar">
-			<div class="sidebar-header">
-				<a href="">
-					<div class="profile-pic">
-						<img src="images/default_person.png"/>
-					</div>
-					<div class="profile-info">
-						你好，<span class="login-user-name">王晓曦！</span>
-					</div>
-				</a>				
-			</div>
-			<ul class="sidebar-content">
-				<li>
-					<a><i class="iconfont">&#xe605;</i>消息中心</a>
-				</li>
-				<li>
-					<a><i class="iconfont">&#xe604;</i><b></b>订单中心<i class="iconfont icon-show">&#xe640;</i></a>
-					<ul>
-					    <li><a>可接订单<b>10</b></a></li>
-					    <li><a>进行中</a></li>
-					    <li><a>已完成</a></li>
-					</ul>
-				</li>
-				<li>
-					<a><i class="iconfont">&#xe654;</i>投诉建议</a>
-				</li>					
-			</ul>
-		</div>
-		<div class="container-box">
-		    <div class="container-m">
-			    <div class="container-title">
-					<i class="iconfont">&#xe6a2;</i><span>订单中心</span> &gt; <span>已完成</span>
-				</div>
-				<div class="container-bg">
-				   <div class="choice-box clearfix">
-						<select class="select-u">
+        <ul class="header-nav clearfix">
+            <li class="headlogo"><img src="../../../images/logo.png"><span class="headlabel">导游端</span></li>
+            <li class="header-nav-right">
+                <ul>
+                    <li class="usercenter">
+                        <a href="../Personal/导游端_个人中心.html">
+                            <span>管理员</span>
+                            <span class="person-img">
+								<img src="../../../images/default_person.png">
+							</span>
+                        </a>
+                    </li>
+                    <li class="setup">
+                        <a><i class="iconfont">&#xe60b;</i>退出</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <a href="">
+                    <div class="profile-pic">
+                        <img src="../../../images/default_person.png" />
+                    </div>
+                    <div class="profile-info">
+                        你好，<span class="login-user-name">王晓曦！</span>
+                    </div>
+                </a>
+            </div>
+            <ul class="sidebar-content">
+                <li>
+                    <a href="../Message/导游端_消息中心.html"><i class="iconfont">&#xe605;</i>消息中心</a>
+                </li>
+                <li>
+                    <a><i class="iconfont">&#xe604;</i><b></b>订单中心<i class="iconfont icon-show">&#xe640;</i></a>
+                    <ul>
+                        <li><a href="../Order/导游端_订单中心_可接订单.html">可接订单<b>10</b></a></li>
+                        <li><a href="../Order/导游端_订单中心_进行中.html">进行中</a></li>
+                        <li><a href="../Order/导游端_订单中心_已完成.html">已完成</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Complain/导游端_投诉建议.html"><i class="iconfont">&#xe654;</i>投诉建议</a>
+                </li>
+            </ul>
+        </div>
+        <div class="container-box">
+            <div class="container-m">
+                <div class="container-title">
+                    <i class="iconfont">&#xe6a2;</i><span>订单中心</span> &gt; <span>已完成</span>
+                </div>
+                <div class="container-bg">
+                    <div class="choice-box clearfix">
+                        <select class="select-u">
 							<option>发布时间最新</option>
 							<option>费用从高到低</option>
 							<option>星级从高到低</option>
 							<option>按出发日期倒序</option>
 							<option>按出发日期顺序</option>
 						</select>
-						<div class="search-box">
-							<span class="search-img"><img src="images/search.png"></span>
-							<input type="text" class="" placeholder="Search">
-						</div>					
-					</div>
-					<div class="teams-box">
-						<div class="teams-part">
-							<div class="radius-top"><img src="images/radius_top.png"></div>
-							<div class="radius-bottom"><img src="images/radius_bottom.png"></div>		
-							<div class="active-state"><img src="images/active_success.png"></div>	
-							<div class="team-infor clearfix">
-								<div class="team-img"><img src="images/team01.png"></div>
-								<div class="team-text">
-									<h5>周庄烟雨水乡一日游</h5>
-									<p class="team-detail">双桥、张厅、沈厅、迷楼、福安桥、张陵公园、单桥、李厅</p>
-									<p class="team-time">2017.02.21 08:00~2017.02.21 16:00</p>
-								</div>
-								<div class="team-state">
-									<p>2017-02-15  15:31</p>
-									<div class="team-pay">
-										<i class="iconfont cb">&#xe61c;</i><span>1人</span>
-										<i class="iconfont cr">&#xe613;</i><span>￥300/次</span>
-									</div>
-								</div>
-								<div class="team-pop">
-									<div class="team-pop-title clearfix">
-										<div class="team-pop-img"><img src="images/team01.png"></div>
-										<div class="team-pop-text">
-											<h3>苏州康辉旅行社</h3>
-											<h5>高素质的员工、高质量的服务、高水平的旅游</h5>
-											<h6>成立时间：<span>2011年3月</span></h6>
-											<h6>联系方式：<span>18555623236</span></h6>
-										</div>
-									</div>
-									<p class="team-pop-star"></p>
-									<p class="team-pop-orderdetail">订单完成率（3个月内）：<span>95%</span></p>
-									<p class="team-pop-orderdetail m-b-10">订单评价统计（3个月内）：<span>好评（52）</span>/<span> 中评（1）</span> / <span>差评（1）</span></p>
-									<p class="team-pop-comment">导服中心评价：<span>该旅行社取消订单次数过多。</span></p>
-								</div>	
-							</div>
-							<div class="team-btn">
-								<a class="btn-cn btn-empty-yellow">查看详情</a>
-							</div>
-						</div>		
-						<div class="teams-part">
-							<div class="radius-top"><img src="images/radius_top.png"></div>
-							<div class="radius-bottom"><img src="images/radius_bottom.png"></div>		
-							<div class="active-state"><img src="images/active_fail.png"></div>	
-							<div class="team-infor clearfix">	
-								<div class="team-img"><img src="images/team02.png"></div>
-								<div class="team-text">
-									<h5>周庄烟雨水乡一日游</h5>
-									<p class="team-detail">双桥、张厅、沈厅、迷楼、福安桥、张陵公园、单桥、李厅</p>
-									<p class="team-time">2017.02.21 08:00~2017.02.21 16:00</p>
-								</div>
-								<div class="team-state">
-									<p>2017-02-15  15:31</p>
-									<div class="team-pay">
-										<i class="iconfont cb">&#xe61c;</i><span>1人</span>
-										<i class="iconfont cr">&#xe613;</i><span>￥300/次</span>
-									</div>
-								</div>
-								<div class="team-pop">
-									<div class="team-pop-title clearfix">
-										<div class="team-pop-img"><img src="images/team02.png"></div>
-										<div class="team-pop-text">
-											<h3>苏州康辉旅行社</h3>
-											<h5>高素质的员工、高质量的服务、高水平的旅游</h5>
-											<h6>成立时间：<span>2011年3月</span></h6>
-											<h6>联系方式：<span>18555623236</span></h6>
-										</div>
-									</div>
-									<p class="team-pop-star star-4"></p>
-									<p class="team-pop-orderdetail">订单完成率（3个月内）：<span>95%</span></p>
-									<p class="team-pop-orderdetail m-b-10">订单评价统计（3个月内）：<span>好评（52）</span>/<span> 中评（1）</span> / <span>差评（1）</span></p>
-									<p class="team-pop-comment">导服中心评价：<span>该旅行社取消订单次数过多。</span></p>
-								</div>
-							</div>
-							<div class="team-btn">
-								<a class="btn-cn btn-empty-yellow">查看详情</a>
-							</div>
-						</div>	
-						<div class="teams-part">
-							<div class="radius-top"><img src="images/radius_top.png"></div>
-							<div class="radius-bottom"><img src="images/radius_bottom.png"></div>		
-							<div class="active-state"><img src="images/active_success.png"></div>	
-							<div class="team-infor clearfix">
-								<div class="team-img"><img src="images/team02.png"></div>
-								<div class="team-text">
-									<h5>周庄烟雨水乡一日游</h5>
-									<p class="team-detail">双桥、张厅、沈厅、迷楼、福安桥、张陵公园、单桥、李厅</p>
-									<p class="team-time">2017.02.21 08:00~2017.02.21 16:00</p>
-								</div>
-								<div class="team-state">
-									<p>2017-02-15  15:31</p>
-									<div class="team-pay">
-										<i class="iconfont cb">&#xe61c;</i><span>1人</span>
-										<i class="iconfont cr">&#xe613;</i><span>￥300/次</span>
-									</div>
-								</div>
-								<div class="team-pop">
-									<div class="team-pop-title clearfix">
-										<div class="team-pop-img"><img src="images/team02.png"></div>
-										<div class="team-pop-text">
-											<h3>苏州康辉旅行社</h3>
-											<h5>高素质的员工、高质量的服务、高水平的旅游</h5>
-											<h6>成立时间：<span>2011年3月</span></h6>
-											<h6>联系方式：<span>18555623236</span></h6>
-										</div>
-									</div>
-									<p class="team-pop-star star-4"></p>
-									<p class="team-pop-orderdetail">订单完成率（3个月内）：<span>95%</span></p>
-									<p class="team-pop-orderdetail m-b-10">订单评价统计（3个月内）：<span>好评（52）</span>/<span> 中评（1）</span> / <span>差评（1）</span></p>
-									<p class="team-pop-comment">导服中心评价：<span>该旅行社取消订单次数过多。</span></p>
-								</div>
-							</div>
-							<div class="team-btn">
-								<a class="btn-cn btn-empty-yellow">查看详情</a>
-							</div>
-						</div>
-						<div class="teams-part">
-							<div class="radius-top"><img src="images/radius_top.png"></div>
-							<div class="radius-bottom"><img src="images/radius_bottom.png"></div>		
-							<div class="active-state"><img src="images/active_fail.png"></div>	
-							<div class="team-infor clearfix">
-								<div class="team-img"><img src="images/team02.png"></div>
-								<div class="team-text">
-									<h5>周庄烟雨水乡一日游</h5>
-									<p class="team-detail">双桥、张厅、沈厅、迷楼、福安桥、张陵公园、单桥、李厅</p>
-									<p class="team-time">2017.02.21 08:00~2017.02.21 16:00</p>
-								</div>
-								<div class="team-state">
-									<p>2017-02-15  15:31</p>
-									<div class="team-pay">
-										<i class="iconfont cb">&#xe61c;</i><span>1人</span>
-										<i class="iconfont cr">&#xe613;</i><span>￥300/次</span>
-									</div>
-								</div>
-								<div class="team-pop">
-									<div class="team-pop-title clearfix">
-										<div class="team-pop-img"><img src="images/team02.png"></div>
-										<div class="team-pop-text">
-											<h3>苏州康辉旅行社</h3>
-											<h5>高素质的员工、高质量的服务、高水平的旅游</h5>
-											<h6>成立时间：<span>2011年3月</span></h6>
-											<h6>联系方式：<span>18555623236</span></h6>
-										</div>
-									</div>
-									<p class="team-pop-star star-4"></p>
-									<p class="team-pop-orderdetail">订单完成率（3个月内）：<span>95%</span></p>
-									<p class="team-pop-orderdetail m-b-10">订单评价统计（3个月内）：<span>好评（52）</span>/<span> 中评（1）</span> / <span>差评（1）</span></p>
-									<p class="team-pop-comment">导服中心评价：<span>该旅行社取消订单次数过多。</span></p>
-								</div>
-							</div>
-							<div class="team-btn">
-								<a class="btn-cn btn-empty-yellow">查看详情</a>
-							</div>
-						</div>						
-                        <div>分页</div>						
-				   </div>
-				</div>
-				<div class="footer">   
-				苏ICP备08009322号&nbsp;&nbsp;&nbsp;苏州市旅游局&nbsp;&nbsp;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术支持：苏州星熙数据科技有限公司<br>业务咨询：0512-67678905&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术咨询：0512-67678905
-				</div>				
-			</div>
-		</div>
-	</div>
-	
-	<script type="text/javascript">
-	  // 左侧导航栏滚动条自适应 
-		function layout() {
-		    $(".sidebar").css("height", $(window).height() - 65);
-			$(".container-box").css("height", $(window).height() - 65);
-		};
-		layout();
-		$(window).resize(function () { layout() });		
+                        <div class="search-box">
+                            <span class="search-img"><img src="../../../images/search.png"></span>
+                            <input type="text" class="" placeholder="Search">
+                        </div>
+                    </div>
+                    <div class="teams-box">
+                        <div class="teams-part">
+                            <div class="radius-top"><img src="../../../images/radius_top.png"></div>
+                            <div class="radius-bottom"><img src="../../../images/radius_bottom.png"></div>
+                            <div class="active-state"><img src="../../../images/active_success.png"></div>
+                            <div class="team-infor clearfix">
+                                <div class="team-img"><img src="../../../images/team01.png"></div>
+                                <div class="team-text">
+                                    <h5>周庄烟雨水乡一日游</h5>
+                                    <p class="team-detail">双桥、张厅、沈厅、迷楼、福安桥、张陵公园、单桥、李厅</p>
+                                    <p class="team-time">2017.02.21 08:00~2017.02.21 16:00</p>
+                                </div>
+                                <div class="team-state">
+                                    <p>2017-02-15 15:31</p>
+                                    <div class="team-pay">
+                                        <i class="iconfont cb">&#xe61c;</i><span>1人</span>
+                                        <i class="iconfont cr">&#xe613;</i><span>￥300/次</span>
+                                    </div>
+                                </div>
+                                <div class="team-pop">
+                                    <div class="team-pop-title clearfix">
+                                        <div class="team-pop-img"><img src="../../../images/team01.png"></div>
+                                        <div class="team-pop-text">
+                                            <h3>苏州康辉旅行社</h3>
+                                            <h5>高素质的员工、高质量的服务、高水平的旅游</h5>
+                                            <h6>成立时间：<span>2011年3月</span></h6>
+                                            <h6>联系方式：<span>18555623236</span></h6>
+                                        </div>
+                                    </div>
+                                    <p class="team-pop-star"></p>
+                                    <p class="team-pop-orderdetail">订单完成率（3个月内）：<span>95%</span></p>
+                                    <p class="team-pop-orderdetail m-b-10">订单评价统计（3个月内）：<span>好评（52）</span>/<span> 中评（1）</span> / <span>差评（1）</span></p>
+                                    <p class="team-pop-comment">导服中心评价：<span>该旅行社取消订单次数过多。</span></p>
+                                </div>
+                            </div>
+                            <div class="team-btn">
+                                <a class="btn-cn btn-empty-yellow" href="导游端_订单中心_已完成_查看详情_成功.html">查看详情</a>
+                            </div>
+                        </div>
+                        <div class="teams-part">
+                            <div class="radius-top"><img src="../../../images/radius_top.png"></div>
+                            <div class="radius-bottom"><img src="../../../images/radius_bottom.png"></div>
+                            <div class="active-state"><img src="../../../images/active_fail.png"></div>
+                            <div class="team-infor clearfix">
+                                <div class="team-img"><img src="../../../images/team02.png"></div>
+                                <div class="team-text">
+                                    <h5>周庄烟雨水乡一日游</h5>
+                                    <p class="team-detail">双桥、张厅、沈厅、迷楼、福安桥、张陵公园、单桥、李厅</p>
+                                    <p class="team-time">2017.02.21 08:00~2017.02.21 16:00</p>
+                                </div>
+                                <div class="team-state">
+                                    <p>2017-02-15 15:31</p>
+                                    <div class="team-pay">
+                                        <i class="iconfont cb">&#xe61c;</i><span>1人</span>
+                                        <i class="iconfont cr">&#xe613;</i><span>￥300/次</span>
+                                    </div>
+                                </div>
+                                <div class="team-pop">
+                                    <div class="team-pop-title clearfix">
+                                        <div class="team-pop-img"><img src="../../../images/team02.png"></div>
+                                        <div class="team-pop-text">
+                                            <h3>苏州康辉旅行社</h3>
+                                            <h5>高素质的员工、高质量的服务、高水平的旅游</h5>
+                                            <h6>成立时间：<span>2011年3月</span></h6>
+                                            <h6>联系方式：<span>18555623236</span></h6>
+                                        </div>
+                                    </div>
+                                    <p class="team-pop-star star-4"></p>
+                                    <p class="team-pop-orderdetail">订单完成率（3个月内）：<span>95%</span></p>
+                                    <p class="team-pop-orderdetail m-b-10">订单评价统计（3个月内）：<span>好评（52）</span>/<span> 中评（1）</span> / <span>差评（1）</span></p>
+                                    <p class="team-pop-comment">导服中心评价：<span>该旅行社取消订单次数过多。</span></p>
+                                </div>
+                            </div>
+                            <div class="team-btn">
+                                <a class="btn-cn btn-empty-yellow" href="导游端_订单中心_已完成_查看详情_失败.html">查看详情</a>
+                            </div>
+                        </div>
+                        <div class="teams-part">
+                            <div class="radius-top"><img src="../../../images/radius_top.png"></div>
+                            <div class="radius-bottom"><img src="../../../images/radius_bottom.png"></div>
+                            <div class="active-state"><img src="../../../images/active_success.png"></div>
+                            <div class="team-infor clearfix">
+                                <div class="team-img"><img src="../../../images/team02.png"></div>
+                                <div class="team-text">
+                                    <h5>周庄烟雨水乡一日游</h5>
+                                    <p class="team-detail">双桥、张厅、沈厅、迷楼、福安桥、张陵公园、单桥、李厅</p>
+                                    <p class="team-time">2017.02.21 08:00~2017.02.21 16:00</p>
+                                </div>
+                                <div class="team-state">
+                                    <p>2017-02-15 15:31</p>
+                                    <div class="team-pay">
+                                        <i class="iconfont cb">&#xe61c;</i><span>1人</span>
+                                        <i class="iconfont cr">&#xe613;</i><span>￥300/次</span>
+                                    </div>
+                                </div>
+                                <div class="team-pop">
+                                    <div class="team-pop-title clearfix">
+                                        <div class="team-pop-img"><img src="../../../images/team02.png"></div>
+                                        <div class="team-pop-text">
+                                            <h3>苏州康辉旅行社</h3>
+                                            <h5>高素质的员工、高质量的服务、高水平的旅游</h5>
+                                            <h6>成立时间：<span>2011年3月</span></h6>
+                                            <h6>联系方式：<span>18555623236</span></h6>
+                                        </div>
+                                    </div>
+                                    <p class="team-pop-star star-4"></p>
+                                    <p class="team-pop-orderdetail">订单完成率（3个月内）：<span>95%</span></p>
+                                    <p class="team-pop-orderdetail m-b-10">订单评价统计（3个月内）：<span>好评（52）</span>/<span> 中评（1）</span> / <span>差评（1）</span></p>
+                                    <p class="team-pop-comment">导服中心评价：<span>该旅行社取消订单次数过多。</span></p>
+                                </div>
+                            </div>
+                            <div class="team-btn">
+                                <a class="btn-cn btn-empty-yellow" href="导游端_订单中心_已完成_查看详情_成功.html">查看详情</a>
+                            </div>
+                        </div>
+                        <div class="teams-part">
+                            <div class="radius-top"><img src="../../../images/radius_top.png"></div>
+                            <div class="radius-bottom"><img src="../../../images/radius_bottom.png"></div>
+                            <div class="active-state"><img src="../../../images/active_fail.png"></div>
+                            <div class="team-infor clearfix">
+                                <div class="team-img"><img src="../../../images/team02.png"></div>
+                                <div class="team-text">
+                                    <h5>周庄烟雨水乡一日游</h5>
+                                    <p class="team-detail">双桥、张厅、沈厅、迷楼、福安桥、张陵公园、单桥、李厅</p>
+                                    <p class="team-time">2017.02.21 08:00~2017.02.21 16:00</p>
+                                </div>
+                                <div class="team-state">
+                                    <p>2017-02-15 15:31</p>
+                                    <div class="team-pay">
+                                        <i class="iconfont cb">&#xe61c;</i><span>1人</span>
+                                        <i class="iconfont cr">&#xe613;</i><span>￥300/次</span>
+                                    </div>
+                                </div>
+                                <div class="team-pop">
+                                    <div class="team-pop-title clearfix">
+                                        <div class="team-pop-img"><img src="../../../images/team02.png"></div>
+                                        <div class="team-pop-text">
+                                            <h3>苏州康辉旅行社</h3>
+                                            <h5>高素质的员工、高质量的服务、高水平的旅游</h5>
+                                            <h6>成立时间：<span>2011年3月</span></h6>
+                                            <h6>联系方式：<span>18555623236</span></h6>
+                                        </div>
+                                    </div>
+                                    <p class="team-pop-star star-4"></p>
+                                    <p class="team-pop-orderdetail">订单完成率（3个月内）：<span>95%</span></p>
+                                    <p class="team-pop-orderdetail m-b-10">订单评价统计（3个月内）：<span>好评（52）</span>/<span> 中评（1）</span> / <span>差评（1）</span></p>
+                                    <p class="team-pop-comment">导服中心评价：<span>该旅行社取消订单次数过多。</span></p>
+                                </div>
+                            </div>
+                            <div class="team-btn">
+                                <a class="btn-cn btn-empty-yellow" href="导游端_订单中心_已完成_查看详情_失败.html">查看详情</a>
+                            </div>
+                        </div>
+                        <div>分页</div>
+                    </div>
+                </div>
+                <div class="footer">
+                    苏ICP备08009322号&nbsp;&nbsp;&nbsp;苏州市旅游局&nbsp;&nbsp;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术支持：苏州星熙数据科技有限公司<br>业务咨询：0512-67678905&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术咨询：0512-67678905
+                </div>
+            </div>
+        </div>
+    </div>
 
-		// 左侧导航栏样式 
-		$(".sidebar-content>li").click(function(){
-			$(this).addClass("c-active").removeClass("").siblings().addClass("").removeClass("c-active"); 	
-		});
-		$(".sidebar-content>li>a").click(function(){
-		    var ul=$(this).parent("li").children("ul");
-			if(ul.is(":hidden")){
-			    ul.slideToggle();
-			    $(this).children(".icon-show").html("&#xe640;");
-			}else{
-			    ul.slideToggle();
-			    $(this).children(".icon-show").html("&#xe6bf;");
-			}
-		}); 
-		$(".sidebar-content>li>ul>li").click(function(){
-			$(this).addClass("a-active").removeClass("").siblings().addClass("").removeClass("a-active"); 	
-		});
-		
-		// 覆盖显示 
-		$(".team-infor .team-img").mouseover( function(){
-		    $(this).parent().children(".team-pop").show();
-		});
-		$(".team-infor .team-img").mouseleave( function(){
-		    $(this).parent().children(".team-pop").hide();
-		});
-	</script>
-	
+    <script type="text/javascript">
+        // 左侧导航栏滚动条自适应 
+        function layout() {
+            $(".sidebar").css("height", $(window).height() - 65);
+            $(".container-box").css("height", $(window).height() - 65);
+        };
+        layout();
+        $(window).resize(function() {
+            layout()
+        });
+
+        // 左侧导航栏样式 
+        $(".sidebar-content>li").click(function() {
+            $(this).addClass("c-active").removeClass("").siblings().addClass("").removeClass("c-active");
+        });
+        $(".sidebar-content>li>a").click(function() {
+            var ul = $(this).parent("li").children("ul");
+            if (ul.is(":hidden")) {
+                ul.slideToggle();
+                $(this).children(".icon-show").html("&#xe640;");
+            } else {
+                ul.slideToggle();
+                $(this).children(".icon-show").html("&#xe6bf;");
+            }
+        });
+        $(".sidebar-content>li>ul>li").click(function() {
+            $(this).addClass("a-active").removeClass("").siblings().addClass("").removeClass("a-active");
+        });
+
+        // 覆盖显示 
+        $(".team-infor .team-img").mouseover(function() {
+            $(this).parent().children(".team-pop").show();
+        });
+        $(".team-infor .team-img").mouseleave(function() {
+            $(this).parent().children(".team-pop").hide();
+        });
+    </script>
+
 </body>
+
 </html>
