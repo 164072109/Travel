@@ -1,8 +1,10 @@
+var pathName=window.document.location.pathname;
+var projectName=pathName.substring(0,pathName.substr(1).indexOf('/')+1);
 document.writeln("    <meta charset=\'utf-8\'>");
-document.writeln("    <script src=\'js/jquery-3.1.1.js\'></script>");
-document.writeln("    <link rel=\'stylesheet\' href=\'css/bootstrap.min.css\'>");
-document.writeln("    <script src=\'js/bootstrap.min.js\'></script>");
-document.writeln("    <link rel=\'stylesheet\' href=\'css/app.min.1.css\' type=\'text/css\' />");
-document.writeln("    <link rel=\'stylesheet\' href=\'css/app.min.2.css\' type=\'text/css\' />");
-document.writeln("    <link rel=\'stylesheet\' href=\'css/travelguide.css\' type=\'text/css\' />");
-document.writeln("    <script src=\'js/angular.js\'></script>");
+document.writeln("    <script src=\'"+projectName+"/js/jquery-3.1.1.js\'></script>");
+document.writeln("    <link rel=\'stylesheet\' href=\'"+projectName+"/css/bootstrap.min.css\'>");
+document.writeln("    <script src=\'"+projectName+"/js/bootstrap.min.js\'></script>");
+document.writeln("    <link rel=\'stylesheet\' href=\'"+projectName+"/css/app.min.1.css\' type=\'text/css\' />");
+document.writeln("    <link rel=\'stylesheet\' href=\'"+projectName+"/css/app.min.2.css\' type=\'text/css\' />");
+document.writeln("    <link rel=\'stylesheet\' href=\'"+projectName+"/css/travelguide.css\' type=\'text/css\' />");
+document.writeln("    <script src=\'"+projectName+"/js/angular.js\'></script>");

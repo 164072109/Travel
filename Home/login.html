@@ -2,14 +2,6 @@
 <html>
 
 <head>
-    <!--<meta charset="utf-8">
-    <script src="js/jquery-3.1.1.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/app.min.1.css" type="text/css" />
-    <link rel="stylesheet" href="css/app.min.2.css" type="text/css" />
-    <link rel="stylesheet" href="css/travelguide.css" type="text/css" />
-    <script src="js/angular.js"></script>-->
     <script src="head.js"></script>
     <title>demo</title>
 </head>
@@ -58,7 +50,7 @@
         });
 
         var app = angular.module('app', []);
-        app.controller("loginFormController", function($scope, $location) {
+        app.controller("loginFormController", function($scope, $location,$http) {
             vm = $scope;
             vm.login = function() {
                 var uid = vm.uid;
@@ -67,14 +59,15 @@
                     alert('请输入用户名密码')
                     return;
                 }
-                var uri;
-                if(uid=='111')
-                	uri='';
-                if(uid=='111')
-                	uri='';
-                if(uid=='111')
-                	uri='';
-                window.location.href = "index1.html";
+		    $.ajax({
+		        type : 'GET',
+		        url : 'json/test.json',
+		        dataType:'json',
+		        success : function(data){
+	            	console.log(data);
+                	window.location.href = "WEB-INF/Guide/index1.html";
+		        }
+		    })
             }
         })
     </script>
